@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ferrari</title>
+		<link rel="stylesheet" href="CSS002.css">		
+</head>
+<body>
+		<div class="header" id="header">
+			<nav>
+				<img src="images/logo1.png" class="logo">
+				<ul>
+					<li><a href="#" id="296gtb">296 GTB</a></li>
+					<li><a href="#" id="812gts">812 GTS</a></li>
+					<li><a href="#" id="sf90stradale">SF90 Stradale</a></li>
+					<li><a href="#" id="f8spider">F8 Spider</a></li>
+					<li><a href="#" id="daytonasp3">Daytona SP3</a></li>	
+					<li><a href="#" id="monzasp2">Monza SP2</a></li>
+				</ul>
+				<a href="html003.html" class="btn">Gallery</a>
+			</nav>
+
+				<div class="info">
+					<div>
+						<h2 id="acceleration">2.8 s</h2>
+						<p>60 mph</p>
+					</div>
+					<div>
+						<h2 id="speed">205 mph</h2>
+						<p>Top Speed</p>
+					</div>
+					<div>
+						<h2 id="power">819 hp</h2>
+						<p>Power Output</p>
+					</div>
+					<div class="line">
+					</div>
+					<div>
+						<h2 id="model">296 GTB</h2>
+					</div>
+				</div>
+		</div>
+
+			<script>
+					var header = document.getElementById("header");
+					var m1 = document.getElementById("296gtb");
+					var m2 = document.getElementById("812gts");
+					var m3 = document.getElementById("sf90stradale");
+					var m4 = document.getElementById("f8spider");
+					var m5 = document.getElementById("daytonasp3");
+					var m6 = document.getElementById("monzasp2");
+					var model = document.getElementById("model");
+
+					var acceleration = document.getElementById("acceleration");
+					var speed = document.getElementById("speed");
+					var power = document.getElementById("power");
+
+					m1.onclick = function(){
+						header.style.backgroundImage = "url(images/gallery/001.jpg)";
+						model.innerHTML = "296 GTB";
+						acceleration.innerHTML = "2.8 s";
+						speed.innerHTML = "205 mph";
+						power.innerHTML = "819 hp";
+					}
+
+					m2.onclick = function(){
+						header.style.backgroundImage = "url(images/gallery/004.jpg)";
+						model.innerHTML = "812 GTS";
+						acceleration.innerHTML = "2.8 s";
+						speed.innerHTML = "211 mph";
+						power.innerHTML = "819 hp";
+					}
+
+					m3.onclick = function(){
+						header.style.backgroundImage = "url(images/gallery/007.jpg)";
+						model.innerHTML = "SF 90 Stradale";
+						acceleration.innerHTML = "2.0 s";
+						speed.innerHTML = "211 mph";
+						power.innerHTML = "986 hp";
+					}
+
+					m4.onclick = function(){
+						header.style.backgroundImage = "url(images/gallery/010.jpg)";
+						model.innerHTML = "F8 Spider";
+						acceleration.innerHTML = "2.8 s";
+						speed.innerHTML = "211 mph";
+						power.innerHTML = "710 hp";
+					}
+
+					m5.onclick = function(){
+						header.style.backgroundImage = "url(images/gallery/013.jpg)";
+						model.innerHTML = "Daytona SP3";
+						acceleration.innerHTML = "2.7 s";
+						speed.innerHTML = "211 mph";
+						power.innerHTML = "829 hp";
+					}
+
+					m6.onclick = function(){
+						header.style.backgroundImage = "url(images/gallery/016.jpg)";
+						model.innerHTML = "Monza SP2";
+						acceleration.innerHTML = "2.9 s";
+						speed.innerHTML = "186 mph";
+						power.innerHTML = "809 hp";
+					}
+
+			</script>
+</body>
+</html>

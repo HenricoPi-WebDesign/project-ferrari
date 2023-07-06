@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Gallery</title>
+		<link rel="stylesheet" href="CSS003.css">
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+<p><br></p>
+
+<header>
+      <a href="html002.html" class="btn">return to homepage</a>
+</header>
+
+		<div class="container">
+
+	<!-- Slider main container -->
+	<div class="swiper">
+
+ 		 <!-- Additional required wrapper -->
+ 		<div class="swiper-wrapper">
+    			<!-- Slides -->
+          <div class="swiper-slide"><img src="images/gallery/001.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/002.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/003.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/004.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/005.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/006.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/007.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/008.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/009.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/010.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/011.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/012.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/013.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/014.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/015.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/016.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/017.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/018.jpg"></div>
+          <div class="swiper-slide"><img src="images/gallery/019.jpg"></div>
+ 		</div>
+
+  		<!-- If we need pagination -->
+  		<div class="swiper-pagination"></div>
+
+  		<!-- If we need navigation buttons -->
+  		<div class="swiper-button-prev"></div>
+  		<div class="swiper-button-next"></div>
+
+	</div>
+
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+		<script>  
+			const swiper = new Swiper('.swiper', {
+  			autoplay: {
+  				delay: 3000,
+  				disableOnInteraction: false,
+  			},
+ 			 loop: true,
+
+ 			 pagination: {
+ 			   el: '.swiper-pagination',
+ 			   clickable: true,
+			  },
+
+  				navigation: {
+ 		  		 nextEl: '.swiper-button-next',
+  		  		prevEl: '.swiper-button-prev',
+ 				 },
+					});
+		</script>
+
+</body>
+
+</html>
